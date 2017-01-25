@@ -7,20 +7,52 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController, UIWebViewDelegate {
+class ViewController: UIViewController {
 
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet var containerView: UIView!
+    
+    var webView: WKWebView!
+    
+    override func loadView() {
+        super.loadView()
+        
+        let config = WKWebViewConfiguration()
+        
+        self.webView = WKWebView(
+            frame: self.containerView.bounds,
+            configuration: config
+        )
+        self.view.insertSubview(self.webView!, at: 0)
+        
+//        self.webView?.navigationDelegate = self
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let htmlFile = Bundle.main.path(forResource: "pb", ofType: "html")
         let html = try? String(contentsOfFile: htmlFile!, encoding: String.Encoding.utf8)
-        webView.loadHTMLString(html!, baseURL: nil)
+        self.webView?.loadHTMLString(html!, baseURL: nil)
+        
+//        let dispatchTime = DispatchTime.now() + .seconds(60)
+//        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+//            self.triggerLogin()
+//        }
     }
     
-    func webViewDidFinishLoad(_ webView : UIWebView) {
-        let _ = webView.stringByEvaluatingJavaScript(from: "var options = {itemId:'guid', environment:'sandbox-5', redirtectAfterAction:true};var creator = new PbCreator(\"hello\",options);creator.initialize();")
-    }
+////    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//    func triggerLogin()
+//    {
+//        print("login triggered")
+////        print("observer is called \(keyPath!) - \(change)- \(context)")
+//        if !webView.isLoading
+//        {
+//            print("Finished loading html")
+//            webView.evaluateJavaScript("var options = {itemId:'guid', environment:'sandbox-5', redirtectAfterAction:true};var creator = new PbCreator(\"hello\",options);creator.initialize();") {(result, error) in
+//                print("result - \(result). error - \(result)")
+//            }
+//        }
+//    }
 }
-

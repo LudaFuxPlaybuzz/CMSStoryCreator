@@ -20,25 +20,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUd-bU-Zpr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4Gb-cv-y4e"/>
-                                </connections>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="wUd-bU-Zpr" secondAttribute="trailing" id="BFq-DD-k7C"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wUd-bU-Zpr" secondAttribute="bottom" id="Nay-nU-I0i"/>
-                            <constraint firstItem="wUd-bU-Zpr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YFb-If-2jt"/>
-                            <constraint firstItem="wUd-bU-Zpr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uaP-3v-jli"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="wUd-bU-Zpr" id="zev-lh-W9a"/>
+                        <outlet property="containerView" destination="8bC-Xf-vdC" id="P8J-PF-D70"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
