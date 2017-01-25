@@ -12,6 +12,7 @@
 		85267AD61E2FCD920001845C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85267AD41E2FCD920001845C /* Main.storyboard */; };
 		85267AD81E2FCD920001845C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85267AD71E2FCD920001845C /* Assets.xcassets */; };
 		85267ADB1E2FCD920001845C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85267AD91E2FCD920001845C /* LaunchScreen.storyboard */; };
+		85D675951E37982D003B9798 /* pb.html in Resources */ = {isa = PBXBuildFile; fileRef = 85D675941E37982D003B9798 /* pb.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		85267AD71E2FCD920001845C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85267ADA1E2FCD920001845C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85267ADC1E2FCD920001845C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85D675941E37982D003B9798 /* pb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pb.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				85267AD21E2FCD920001845C /* ViewController.swift */,
 				85267AD41E2FCD920001845C /* Main.storyboard */,
 				85267AD71E2FCD920001845C /* Assets.xcassets */,
+				85D675941E37982D003B9798 /* pb.html */,
 				85267AD91E2FCD920001845C /* LaunchScreen.storyboard */,
 				85267ADC1E2FCD920001845C /* Info.plist */,
 			);
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					85267ACC1E2FCD910001845C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ECX68SF37Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D675951E37982D003B9798 /* pb.html in Resources */,
 				85267ADB1E2FCD920001845C /* LaunchScreen.storyboard in Resources */,
 				85267AD81E2FCD920001845C /* Assets.xcassets in Resources */,
 				85267AD61E2FCD920001845C /* Main.storyboard in Resources */,
@@ -260,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ECX68SF37Q;
 				INFOPLIST_FILE = CMSStoryCreator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Playbuzz.CMSStoryCreator;
@@ -272,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ECX68SF37Q;
 				INFOPLIST_FILE = CMSStoryCreator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Playbuzz.CMSStoryCreator;
@@ -299,6 +306,7 @@
 				85267AE11E2FCD920001845C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
